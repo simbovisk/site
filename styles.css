@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700;900&family=Roboto:wght@300;400;700&family=Rock+Salt&family=Ultra&family=Underdog&display=swap");
+
+/*
+font-family: 'Catamaran', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Ultra', serif;
+font-family: 'Underdog', cursive;
+
+ */
+
+body {
+  margin: 0;
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 4em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  font-family: "Catamaran", sans-serif;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  font-size: 5em;
+  line-height: 1;
+  color: #9e9ba4;
+  display: inline-block;
+}
+
+.link--kukuri {
+  text-transform: uppercase;
+  font-weight: 900;
+  overflow: hidden;
+  line-height: 1;
+  color: #b2b0a9;
+}
+
+.link--kukuri:hover {
+  color: #b2b0a9;
+}
+
+.link--kukuri::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 100%;
+  top: 50%;
+  margin-top: -8px;
+  right: 0;
+  background: #f9f9f9;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.4s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link--kukuri:hover::after {
+  transform: translate3d(100%, 0, 0);
+}
+
+.link--kukuri::before {
+  content: attr(data-letters);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: #424242;
+  white-space: nowrap;
+  width: 0%;
+  transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+  width: 100%;
+}
+
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 100px 0;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: #424242;
+}
+
+.hero__text,
+.form--link {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#subtitle {
+  font-family: "Ultra", serif;
+  font-size: 1.8em;
+  margin-bottom: 0.25em;
+  text-align: center;
+}
+
+.hero p:nth-child(3) {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-family: "Catamaran", sans-serif;
+  line-height: 1em;
+  text-align: center;
+}
+
+.btn {
+  font-family: "Catamaran", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242;
+  font-weight: 900;
+  background-color: #b2b0a9;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  text-align: center;
+  margin: 0.4rem auto;
+}
+
+.hero__img {
+  margin-top: 2rem;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+.title {
+  text-align: center;
+  font-family: "Ultra", serif;
+  font-size: 2.25rem;
+  color: #824936;
+}
+
+.article {
+  color: #f3eed9;
+}
+
+.article h2 {
+  font-family: "Ultra", serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.article p {
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.5rem;
+}
+
+.black--sec {
+  background: #222c2a;
+  padding: 3em 0;
+}
+
+.black--content {
+  display: flex;
+  max-width: 1128px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.terra--sec {
+  background: #824936;
+  padding: 3em 0;
+}
+
+.terra--content {
+  max-width: 1128px;
+  width: 80%;
+  margin: 0 auto;
+  /* padding: 2em 0; */
+}
+
+.terra__text {
+  align-self: flex-start;
+}
+
+footer {
+  font-family: "Catamaran", sans-serif;
+  padding: 10px 0;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: #424242;
+}
+
+.foot--links a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .black--content h2 {
+    order: 2;
+  }
+  .black--content img {
+    order: 1;
+  }
+  .black--content p {
+    order: 3;
+  }
+
+  .row,
+  .text--content,
+  .black--content,
+  .terra--content {
+    display: block;
+  }
+  .first,
+  .second,
+  .hero__text,
+  .hero__img,
+  .black__text,
+  .black__img,
+  .terra__text,
+  .terra__img {
+    width: 100%;
+  }
+  .hero__img {
+    margin-top: 2em;
+  }
+  .first,
+  .second,
+  .black__img,
+  .terra__text {
+    margin: 0 auto;
+  }
+  .first {
+    margin-bottom: 3rem;
+  }
+  .btn:nth-of-type(1) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 5em;
+  }
+
+  .intro__title {
+    font-size: 3.75rem;
+  }
+  .hero__text {
+    width: 62%;
+  }
+
+  .hero__img {
+    width: 32%;
+    align-self: flex-start;
+  }
+  #subtitle {
+    font-family: "Ultra", serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: inherit;
+  }
+}
