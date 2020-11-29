@@ -192,6 +192,10 @@ a {
   align-self: flex-start;
 }
 
+.insta {
+  align-self: flex-center;
+}
+
 footer {
   font-family: "Catamaran", sans-serif;
   padding: 10px 0;
