@@ -193,7 +193,7 @@ a {
 }
 
 .insta {
-  display: inline-block;
+  margin: auto;
 }
 
 footer {
