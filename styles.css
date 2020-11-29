@@ -193,7 +193,9 @@ a {
 }
 
 .insta {
-  align-self: flex-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
